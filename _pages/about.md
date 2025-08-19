@@ -1,8 +1,9 @@
 ---
 layout: about
 title: about
+no_navbar: true
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Optometrist. Vision Science PhD candidate. UC Berkeley
+subtitle: </a> Optometrist. <a href='#'> Vision Science PhD candidate.</a> UC Berkeley
 
 profile:
   align: right
