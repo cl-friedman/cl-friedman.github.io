@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-no_navbar: true
+nav: false
 permalink: /
 subtitle: </a> Optometrist. <a href='#'> Vision Science PhD candidate.</a> UC Berkeley
 
@@ -23,24 +23,6 @@ latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
-
-  <div class="hero-section">
-  <div class="hero-content">
-    <h1>Your Name</h1>
-    <p>Welcome to my personal website. Explore my work and interests below!</p>
-    <div class="icon-buttons">
-      <a class="icon-button" href="/research">
-        <i class="fas fa-flask"></i><br>Research
-      </a>
-      <a class="icon-button" href="/cv">
-        <i class="fas fa-file-alt"></i><br>CV
-      </a>
-      <a class="icon-button" href="/blog">
-        <i class="fas fa-blog"></i><br>Blog
-      </a>
-    </div>
-  </div>
-</div>
 
 ---
 
