@@ -1,43 +1,156 @@
+/******************************************************************************
+ * Custom Styles
+ ******************************************************************************/
+
+/******************************************************************************
+ * Global Styles
+ ******************************************************************************/
+body {
+  padding-bottom: 70px;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+  font-family: 'Helvetica', sans-serif;
+}
+
+body.fixed-top-nav {
+  padding-top: 56px;
+}
+
+body.sticky-bottom-footer {
+  padding-bottom: 0;
+}
+
+.container {
+  max-width: $max-content-width;
+}
+
+// Profile
+.profile {
+  img {
+    width: 100%;
+  }
+}
+
+/******************************************************************************
+ * Hero Section (Landing Page)
+ ******************************************************************************/
 .hero-section {
-  min-height: 60vh; /* or use 100vh for full screen */
+  min-height: 60vh; // or 100vh for full screen
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 2rem;
+  background-color: var(--global-bg-color);  // Use global background color
+  background-image: url('/path/to/your-image.jpg');  // Optional background image
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Optional box shadow
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--global-theme-color);
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--global-text-color);
+  }
+
+  .hero-icon-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      color: var(--global-theme-color);
+      font-size: 2rem; // Icon font size
+      transition: transform 0.3s ease, color 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.1);
+        color: var(--global-hover-color);
+      }
+
+      i {
+        display: block;
+        font-size: 3rem;  // Adjust the icon size
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
 }
 
-.hero-section h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+/******************************************************************************
+ * Footer Styles
+ ******************************************************************************/
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--global-footer-bg-color);
+  color: var(--global-footer-text-color);
 }
 
-.hero-section p {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+footer a {
+  color: var(--global-footer-link-color);
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--global-hover-color);
+  }
 }
 
-.hero-icon-buttons {
-  display: flex;
-  gap: 2rem;
-}
-
-.hero-icon-buttons a {
-  text-decoration: none;
-  color: var(--global-theme-color);
-  font-size: 1.75rem;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.hero-icon-buttons a:hover {
-  transform: scale(1.1);
-  color: var(--global-hover-color);
-}
-
-.hero-icon-buttons i {
+/******************************************************************************
+ * Light/Dark Mode Toggle Styles
+ ******************************************************************************/
+#light-toggle-system {
+  padding-left: 10px;
+  padding-top: 12px;
   display: block;
-  font-size: 2.5rem;
-  margin-bottom: 0.25rem;
 }
+
+#light-toggle-dark {
+  display: none;
+}
+
+#light-toggle-light {
+  display: none;
+}
+
+.only-light {
+  display: block;
+}
+
+.only-dark {
+  display: none;
+}
+
+/******************************************************************************
+ * Back to Top Button
+ ******************************************************************************/
+#back-to-top {
+  color: var(--global-back-to-top-text-color);
+  background: var(--global-back-to-top-bg-color);
+  bottom: $back-to-top-bottom;
+  right: $back-to-top-right;
+  height: $back-to-top-height;
+  width: $back-to-top-width;
+  z-index: $back-to-top-z-index;
+}
+
+/******************************************************************************
+ * Additional Custom Styles
+ ******************************************************************************/
+
+/* Optional: If you want to style specific content blocks for visibility on the landing page (like selected papers, announcements) */
+.selected-papers,
+.announcements {
+  margin-top: 3rem;
+}
+
+/* Add any additional styles specific to your site's needs here */
 
