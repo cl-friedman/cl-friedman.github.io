@@ -11,6 +11,16 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info:
 
+hero:
+  <h1>Your Name</h1>
+  <p>Vision Sciences PhD candidate @ UC Berkeley</p>
+  <div class="hero-icon-buttons">
+    <a href="/research"><i class="fas fa-flask"></i><br>Research</a>
+    <a href="/cv"><i class="fas fa-file-alt"></i><br>CV</a>
+    <a href="/blog"><i class="fas fa-blog"></i><br>Blog</a>
+  </div>
+
+
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
