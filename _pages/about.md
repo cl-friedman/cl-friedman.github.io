@@ -23,6 +23,25 @@ latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+
+  <div class="hero-section">
+  <div class="hero-content">
+    <h1>Your Name</h1>
+    <p>Welcome to my personal website. Explore my work and interests below!</p>
+    <div class="icon-buttons">
+      <a class="icon-button" href="/research">
+        <i class="fas fa-flask"></i><br>Research
+      </a>
+      <a class="icon-button" href="/cv">
+        <i class="fas fa-file-alt"></i><br>CV
+      </a>
+      <a class="icon-button" href="/blog">
+        <i class="fas fa-blog"></i><br>Blog
+      </a>
+    </div>
+  </div>
+</div>
+
 ---
 
 Hi! I'm an optometrist located in the San Francisco Bay Area; I am currently pursuing a PhD in Vision Sciences at UC Berkeley. I'm interested in the intersection of visual perception and eye movements.
