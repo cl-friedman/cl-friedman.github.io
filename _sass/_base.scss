@@ -287,13 +287,16 @@ ul.task-list input[type="checkbox"] {
     color: var(--global-text-color);
   }
 
-  .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+.navbar-nav .nav-item .nav-link {
+  color: var(--global-text-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  #font-family: 'Arial', sans-serif;
 
-    &:hover {
-      color: var(--global-hover-color);
-    }
+  &:hover {
+    color: var(--global-hover-color);
   }
+}
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
