@@ -1,53 +1,43 @@
-/******************************************************************************
- * Content
- ******************************************************************************/
-
-body {
-  padding-bottom: 70px;
-  color: var(--global-text-color);
-  background-color: var(--global-bg-color);
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    scroll-margin-top: 66px;
-  }
+.hero-section {
+  min-height: 60vh; /* or use 100vh for full screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
 }
 
-body.fixed-top-nav {
-  // Add some padding for the nav-bar.
-  padding-top: 56px;
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-body.sticky-bottom-footer {
-  // Remove padding below footer.
-  padding-bottom: 0;
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.container {
-  max-width: $max-content-width;
+.hero-icon-buttons {
+  display: flex;
+  gap: 2rem;
 }
 
-// Profile
-.profile {
-  img {
-    width: 100%;
-  }
+.hero-icon-buttons a {
+  text-decoration: none;
+  color: var(--global-theme-color);
+  font-size: 1.75rem;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-// TODO: redefine content layout.
+.hero-icon-buttons a:hover {
+  transform: scale(1.1);
+  color: var(--global-hover-color);
+}
 
-/******************************************************************************
- * Publications
- ******************************************************************************/
+.hero-icon-buttons i {
+  display: block;
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
 
-// TODO: redefine publications layout.
-
-/*****************************************************************************
-* Projects
-*****************************************************************************/
-
-// TODO: redefine projects layout.
