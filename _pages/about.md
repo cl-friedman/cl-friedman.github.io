@@ -3,7 +3,7 @@ layout: about
 title: about
 nav: false
 permalink: /
-subtitle: </a> Optometrist. <a href='#'> Vision Science PhD candidate.</a> UC Berkeley
+subtitle: </a> **Optometrist.** <a href='#'> Vision Science PhD candidate.</a> UC Berkeley
 
 profile:
   align: right
