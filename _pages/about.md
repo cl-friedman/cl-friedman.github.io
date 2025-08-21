@@ -6,6 +6,9 @@ permalink: /
 
 hero: |
   <div class="hero-flex">
+    <div class="hero-image">
+      <img src="/assets/img/prof_pic.jpg" alt="Profile picture of Clara T. Friedman" />
+    </div>
     <div class="hero-text">
       <h1>Clara T. <strong>Friedman</strong></h1>
       <h2>Optometrist. Vision Science PhD candidate. UC Berkeley</h2>
@@ -34,9 +37,6 @@ hero: |
         <img src="/assets/img/icons/contact-icon.png" alt="Contact Icon" />
         <span>Contact</span>
       </a>
-    </div>
-    <div class="hero-image">
-      <img src="/assets/img/prof_pic.jpg" alt="Profile picture of Clara T. Friedman" />
     </div>
   </div>
 
