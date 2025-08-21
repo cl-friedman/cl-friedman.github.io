@@ -3,38 +3,45 @@ layout: about
 title: about
 nav: false
 permalink: /
-#subtitle: </a> Optometrist. <a href='#'> Vision Science PhD candidate.</a> UC Berkeley
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info:
-
-hero:
-  <h1>Clara T. <strong>Friedman</strong></h1>
-  <h2>Optometrist. Vision Science PhD candidate. UC Berkeley</h2>
-  <p>Optometrist. Vision Science PhD candidate. UC Berkeley</p>
-  <div class="hero-icon-buttons">
-    <a href="/research"><i class="fas fa-flask"></i><br>Research</a>
-    <a href="/cv"><i class="fas fa-file-alt"></i><br>CV</a>
-    <a href="/blog"><i class="fas fa-blog"></i><br>Blog</a>
+hero: |
+  <div class="hero-flex">
+    <div class="hero-text">
+      <h1>Clara T. <strong>Friedman</strong></h1>
+      <h2>Optometrist. Vision Science PhD candidate. UC Berkeley</h2>
+      <p>Hi! I'm an optometrist located in the San Francisco Bay Area; I am currently           pursuing a PhD in Vision Sciences at UC Berkeley. I'm interested in the                  intersection of visual perception and eye movements.</p>
+      <div class="hero-icon-buttons">
+        <a href="/research">
+          <img src="/assets/img/icons/research-icon.png" alt="Research Icon" />
+          <span>Research</span>
+        </a>
+        <a href="/cv">
+          <img src="/assets/img/icons/cv-icon.png" alt="CV Icon" />
+          <span>CV</span>
+        </a>
+        <a href="/blog">
+          <img src="/assets/img/icons/blog-icon.png" alt="Blog Icon" />
+          <span>Blog</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="/assets/img/prof_pic.jpg" alt="Profile picture of Clara T. Friedman" />
+    </div>
   </div>
 
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
+  scrollable: true
+  limit: 5
 
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
-
+  scrollable: true
+  limit: 3
 ---
 
-Hi! I'm an optometrist located in the San Francisco Bay Area; I am currently pursuing a PhD in Vision Sciences at UC Berkeley. I'm interested in the intersection of visual perception and eye movements.
+
