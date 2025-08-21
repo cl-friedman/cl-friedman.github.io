@@ -17,6 +17,10 @@ hero: |
           <img src="/assets/img/icons/research-icon.png" alt="Research Icon" />
           <span>Research</span>
         </a>
+        <a href="/publications">
+          <img src="/assets/img/icons/publications-icon.png" alt="Publications Icon" />
+          <span>Publications</span>
+        </a>
         <a href="/cv">
           <img src="/assets/img/icons/cv-icon.png" alt="CV Icon" />
           <span>CV</span>
