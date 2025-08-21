@@ -29,6 +29,10 @@ hero: |
           <img src="/assets/img/icons/blog-icon.png" alt="Blog Icon" />
           <span>Blog</span>
         </a>
+        <a href="/contact">
+          <img src="/assets/img/icons/contact-icon.png" alt="Contact Icon" />
+          <span>Contact</span>
+        </a>
       </div>
     </div>
     <div class="hero-image">
