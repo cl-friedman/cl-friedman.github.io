@@ -12,7 +12,7 @@ profile:
   more_info:
 
 hero:
-  <h1>Clara T. <strong>Friedman</strong>strong></h1>
+  <h1>Clara T. <strong>Friedman</strong></h1>
   <h2>Optometrist. Vision Science PhD candidate. UC Berkeley</h2>
   <p>Optometrist. Vision Science PhD candidate. UC Berkeley</p>
   <div class="hero-icon-buttons">
