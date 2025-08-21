@@ -200,14 +200,37 @@ footer a {
   flex-wrap: wrap;
 }
 
-.hero-icon-buttons a {
-  text-align: center;
-  text-decoration: none;
-  color: var(--global-text-color);
-  transition: transform 0.2s ease;
+.hero-icon-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--global-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+    }
+
+    span {
+      font-size: 1rem;
+    }
+  }
 }
 
 .hero-icon-buttons a:hover {
