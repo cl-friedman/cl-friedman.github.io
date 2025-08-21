@@ -164,11 +164,21 @@ footer a {
  ******************************************************************************/
 .hero-flex {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  text-align: left;
 }
 
 .hero-text {
