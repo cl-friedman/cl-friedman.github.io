@@ -3,18 +3,19 @@ layout: about
 title: about
 nav: false
 permalink: /
-
 hero: |
   <div class="hero-flex">
-    <div class="hero-image">
-      <img src="/assets/img/prof_pic.jpg" alt="Profile picture of Clara T. Friedman" />
-    </div>
-    <div class="hero-text">
-      <h1>Clara T. <strong>Friedman</strong></h1>
-      <h2>Optometrist. Vision Science PhD candidate. UC Berkeley</h2>
-      <p>
-        Hi! I'm an optometrist located in the San Francisco Bay Area; I am currently             pursuing a PhD in Vision Sciences at UC Berkeley. I'm interested in the                  intersection of visual perception and eye movements.
-      </p>
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="/assets/img/prof_pic.jpg" alt="Profile picture of Clara T. Friedman" />
+      </div>
+      <div class="hero-text">
+        <h1>Clara T. <strong>Friedman</strong></h1>
+        <h2>Optometrist. Vision Science PhD candidate. UC Berkeley</h2>
+        <p>
+          Hi! I'm an optometrist located in the San Francisco Bay Area; I am currently               pursuing a PhD in Vision Sciences at UC Berkeley. I'm interested in the                    intersection of visual perception and eye movements.
+        </p>
+      </div>
     </div>
     <div class="hero-icon-buttons">
       <a href="/research">
@@ -39,6 +40,8 @@ hero: |
       </a>
     </div>
   </div>
+
+
 
 selected_papers: false
 social: false
