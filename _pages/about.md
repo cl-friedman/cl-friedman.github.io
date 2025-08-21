@@ -9,7 +9,9 @@ hero: |
     <div class="hero-text">
       <h1>Clara T. <strong>Friedman</strong></h1>
       <h2>Optometrist. Vision Science PhD candidate. UC Berkeley</h2>
-      <p>Hi! I'm an optometrist located in the San Francisco Bay Area; I am currently           pursuing a PhD in Vision Sciences at UC Berkeley. I'm interested in the                  intersection of visual perception and eye movements.</p>
+      <p>
+        Hi! I'm an optometrist located in the San Francisco Bay Area; I am currently             pursuing a PhD in Vision Sciences at UC Berkeley. I'm interested in the                  intersection of visual perception and eye movements.
+      </p>
       <div class="hero-icon-buttons">
         <a href="/research">
           <img src="/assets/img/icons/research-icon.png" alt="Research Icon" />
