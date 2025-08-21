@@ -159,4 +159,76 @@ footer a {
 }
 
 /* Add any additional styles specific to your site's needs here */
+/******************************************************************************
+ * New Hero Layout with Flexbox
+ ******************************************************************************/
+.hero-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: var(--global-theme-color);
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--global-text-color);
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--global-text-color);
+}
+
+.hero-icon-buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-icon-buttons a {
+  text-align: center;
+  text-decoration: none;
+  color: var(--global-text-color);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-icon-buttons a:hover {
+  transform: scale(1.05);
+}
+
+.hero-icon-buttons img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.hero-icon-buttons span {
+  font-size: 1rem;
+}
+
+.hero-image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
 
