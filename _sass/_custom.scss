@@ -54,8 +54,14 @@ body.sticky-bottom-footer {
     color: var(--global-theme-color);
   }
 
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--global-theme-color);
+  }
+
   p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
     color: var(--global-text-color);
   }
