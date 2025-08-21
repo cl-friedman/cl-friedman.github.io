@@ -3,7 +3,7 @@ layout: about
 title: about
 nav: false
 permalink: /
-subtitle: </a> **Optometrist.** <a href='#'> Vision Science PhD candidate.</a> UC Berkeley
+#subtitle: </a> Optometrist. <a href='#'> Vision Science PhD candidate.</a> UC Berkeley
 
 profile:
   align: right
@@ -12,8 +12,9 @@ profile:
   more_info:
 
 hero:
-  <h1>Your Name</h1>
-  <p>Vision Sciences PhD candidate @ UC Berkeley</p>
+  <h1>Clara T. <strong>Friedman</strong>strong></h1>
+  <h2>Optometrist. Vision Science PhD candidate. UC Berkeley</h2>
+  <p>Optometrist. Vision Science PhD candidate. UC Berkeley</p>
   <div class="hero-icon-buttons">
     <a href="/research"><i class="fas fa-flask"></i><br>Research</a>
     <a href="/cv"><i class="fas fa-file-alt"></i><br>CV</a>
