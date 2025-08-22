@@ -162,35 +162,33 @@ footer a {
 /******************************************************************************
  * New Hero Layout with Flexbox
  ******************************************************************************/
+/* Hero Flex Container */
 .hero-flex {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column; /* Stack elements vertically by default */
   align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
+}
 
-  // Responsive stack on smaller screens
+/* Content holding image + text side by side */
+.hero-content {
+  display: flex;
+  flex-direction: row; /* Horizontal layout on desktop */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+
   @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: column; /* Stack vertically on mobile */
     text-align: center;
   }
 }
 
-.hero-text {
-  flex: 1;
-  min-width: 260px;
-
-  @media (max-width: 768px) {
-    order: 2; // Move text below image on mobile if preferred
-    width: 100%;
-  }
-}
-
 .hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  flex: 0 0 auto;
 
   img {
     max-width: 300px;
@@ -201,44 +199,24 @@ footer a {
       max-width: 80%;
     }
   }
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 260px;
 
   @media (max-width: 768px) {
-    order: 1; // Move image above text on mobile if preferred
-    width: 100%;
+    width: 90%;
   }
 }
 
+/* Icon Buttons Row, always below content */
 .hero-icon-buttons {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  justify-content: center;
   margin-top: 1.5rem;
-
-  a {
-    text-align: center;
-    text-decoration: none;
-    color: var(--global-text-color);
-    transition: transform 0.2s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &:hover {
-      transform: scale(1.05);
-    }
-
-    img {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-      margin-bottom: 0.5rem;
-    }
-
-    span {
-      font-size: 1rem;
-    }
-  }
 }
-
 
