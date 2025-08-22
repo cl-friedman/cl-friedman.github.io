@@ -49,7 +49,7 @@ body.sticky-bottom-footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Optional box shadow
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.25rem;
     margin-bottom: 0.5rem;
     color: var(--global-text-color);
   }
@@ -165,66 +165,80 @@ footer a {
 .hero-flex {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
 
-.hero-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  width: 100%;
-  max-width: 1000px;
-}
-
-.hero-image img {
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
+  // Responsive stack on smaller screens
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .hero-text {
   flex: 1;
   min-width: 260px;
-  text-align: left;
+
+  @media (max-width: 768px) {
+    order: 2; // Move text below image on mobile if preferred
+    width: 100%;
+  }
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+
+    @media (max-width: 768px) {
+      max-width: 80%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    order: 1; // Move image above text on mobile if preferred
+    width: 100%;
+  }
 }
 
 .hero-icon-buttons {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-}
+  justify-content: center;
+  margin-top: 1.5rem;
 
-.hero-icon-buttons a {
-  text-decoration: none;
-  color: var(--global-text-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.2s ease;
-}
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--global-text-color);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.hero-icon-buttons a:hover {
-  transform: scale(1.05);
-}
+    &:hover {
+      transform: scale(1.05);
+    }
 
-.hero-icon-buttons img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  margin-bottom: 0.5rem;
-}
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+    }
 
-.hero-icon-buttons span {
-  font-size: 1rem;
+    span {
+      font-size: 1rem;
+    }
+  }
 }
 
 
