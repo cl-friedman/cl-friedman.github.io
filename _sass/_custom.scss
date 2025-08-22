@@ -55,7 +55,7 @@ body.sticky-bottom-footer {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
     color: var(--global-theme-color);
   }
@@ -198,6 +198,7 @@ footer a {
 .hero-icon-buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
 }
