@@ -2,7 +2,7 @@
 layout: page
 permalink: /contact/
 title: contact
-description: Feel free to reach out:
+description: Feel free to reach out
 nav: true
 nav_order: 4
 ---
