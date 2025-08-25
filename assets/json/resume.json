@@ -23,16 +23,19 @@
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
+      "name": "Amazon Lab126",
+      "position": "Specialized HDE Intern - Emerging Optics",
+      "url": "",
+      "startDate": "2025",
+      "endDate": "",
       "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "highlights": ["Developed optical simulations using LightTools to analyze reflection characteristics in emerging display technology, identifying key parameters affecting visual comfort",
+      "Designed and conducted two user studies: (1) real-world usability testing with prototype devices and (2) psycho-physical experiments using MATLAB and programmable lighting to establish perceptual thresholds and preferences",
+      "Employed rigorous statistical methodology including non-parametric analyses, correlation studies, and predictive modeling to translate optical measurements into user experience metrics", 
+      "Created comprehensive technical documentation including literature reviews, experimental protocols, and data visualization, and communicated technical findings and design implications to stakeholders across product management, human factors, product innovation, optical engineering, and safety/reliability teams"]
     }
   ],
-  "volunteer": [
+  "disabled_volunteer": [
     {
       "organization": "People's Climate March",
       "location": "Zurich, Switzerland",
@@ -46,15 +49,26 @@
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "institution": "University of California, Berkeley",
+      "location": "Berkeley, California",
+      "url": "",
+      "area": "Doctor of Optometry",
+      "studyType": "O.D.",
+      "startDate": "2021-09",
+      "endDate": "2025-05",
       "score": "10",
-      "courses": ["Theory of Relativity"]
+      "courses": ""
+    },
+    {
+      "institution": "McGill University",
+      "location": "Montréal, Québec",
+      "url": "",
+      "area": "Neuroscience",
+      "studyType": "B.Sc.",
+      "startDate": "2017-09",
+      "endDate": "2021-05",
+      "score": "10",
+      "courses": ""
     }
   ],
   "awards": [
@@ -66,7 +80,7 @@
       "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
     }
   ],
-  "certificates": [
+  "disabled_certificates": [
     {
       "name": "Machine Learning",
       "date": "2018-01-01",
@@ -146,7 +160,7 @@
       ]
     }
   ],
-  "references": [
+  "disabled_references": [
     {
       "name": "Professor John Doe",
       "icon": "fa-solid fa-laptop",
@@ -158,7 +172,7 @@
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     }
   ],
-  "projects": [
+  "disabled_projects": [
     {
       "name": "Quantum Computing",
       "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
