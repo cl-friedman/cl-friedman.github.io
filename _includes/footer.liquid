@@ -1,4 +1,4 @@
-{#
+{% if false %}
   {% capture footer_contents %}
     &copy; Copyright {{ site.time | date: '%Y' }}
     {{ site.first_name }}
@@ -28,4 +28,5 @@
         {{ footer_contents }}
       </div>
     </footer>
-#}
+  {% endif %}
+{% endif %}
