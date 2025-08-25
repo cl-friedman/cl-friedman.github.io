@@ -11,7 +11,7 @@ hero: |
       </div>
       <div class="hero-text">
         <h1>Clara T. <strong>Friedman</strong></h1>
-        <h2>Optometrist. Vision Science PhD candidate. UC Berkeley</h2>
+        <h2>Optometrist. Vision Science PhD candidate @ UC Berkeley</h2>
         <p>
           Hi! I'm an optometrist located in the San Francisco Bay Area; I am currently               pursuing a PhD in Vision Sciences at UC Berkeley. I'm interested in the                    intersection of visual perception and eye movements.
         </p>
@@ -29,10 +29,6 @@ hero: |
       <a href="/cv">
         <img src="/assets/img/icons/cv-icon.png" alt="CV Icon" />
         <span>CV</span>
-      </a>
-      <a href="/blog">
-        <img src="/assets/img/icons/blog-icon.png" alt="Blog Icon" />
-        <span>Blog</span>
       </a>
       <a href="/contact">
         <img src="/assets/img/icons/contact-icon.png" alt="Contact Icon" />
