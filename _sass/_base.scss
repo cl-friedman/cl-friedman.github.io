@@ -4,6 +4,8 @@
 // Step 2: Apply the font to the whole site
 body {
   font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;       /* For Safari and Chrome */
+  -moz-osx-font-smoothing: grayscale;      /* For Firefox on macOS */
 }
 
 /*
