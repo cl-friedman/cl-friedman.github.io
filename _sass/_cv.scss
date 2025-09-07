@@ -171,7 +171,7 @@ ul.timeline li {
   min-height: 2.2rem;
   color: var(--global-text-color);
   list-style-position: inside;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 span.badge-toc {
@@ -194,6 +194,10 @@ ul.timeline li::before {
   position: absolute;
   left: 2px;
   top: -0.5rem;
+}
+
+.list-group-item ul li {
+  font-size: 0.8rem; /* Adjust this value to your liking */
 }
 
 /*ul.timeline::before {
