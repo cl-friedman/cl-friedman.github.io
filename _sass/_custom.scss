@@ -10,6 +10,8 @@ body {
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
   font-family: 'Helvetica', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body.fixed-top-nav {
