@@ -1,0 +1,32 @@
+---
+layout: test
+title: Publication Test
+---
+
+<h1>Publication Test Page</h1>
+
+<hr>
+<h2>Attempting to Group by Category:</h2>
+
+{% assign publications_by_category = site.scholar.bibliography | group_by: 'category' %}
+{% for category in publications_by_category %}
+  <h3>Category Found: {{ category.name }}</h3>
+  <ul>
+    {% for entry in category.items %}
+      <li>{{ entry.title }}</li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p><strong>FAILURE:</strong> The 'group_by: category' filter returned nothing.</p>
+{% endfor %}
+
+<hr>
+<h2>Raw Data Inspection:</h2>
+<p>Confirming 'category' field exists for each entry.</p>
+
+{% for entry in site.scholar.bibliography %}
+  <p>
+    <strong>Title:</strong> {{ entry.title }} <br>
+    <strong>Category Value:</strong> [{{ entry.category }}]
+  </p>
+{% endfor %}
