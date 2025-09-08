@@ -1,21 +1,4 @@
 ---
 ---
-
-{% comment %}
-I've commented out the search bar below as requested.
-{% endcomment %}
-{% comment %}
-<div class="bibsearch-form-container">
-  <form oninput="search_term_changed(this)">
-    <input class="bibsearch-form-input" type="text" id="bib_search" placeholder="search" value="" />
-  </form>
-</div>
-{% endcomment %}
-
-{% assign publications_by_category = site.scholar.bibliography | group_by: 'category' %}
-{% for category in publications_by_category %}
-  <h2 class="bibliography">{{ category.name }}</h2>
-  {% for entry in category.items %}
-    {% include bib.liquid %}
-  {% endfor %}
-{% endfor %}
+<p>Testing site.scholar.bibliography:</p>
+<pre>{{ site.scholar.bibliography | inspect }}</pre>
