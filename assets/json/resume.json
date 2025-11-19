@@ -21,6 +21,42 @@
       }
     ]
   },
+
+  "education": [
+    {
+      "institution": "University of California, Berkeley",
+      "location": "Berkeley, California",
+      "url": "",
+      "area": "Vision Sciences",
+      "studyType": "PhD",
+      "startDate": "2025-08",
+      "endDate": "present",
+      "score": "10",
+      "courses": ""
+    },
+    {
+      "institution": "University of California, Berkeley",
+      "location": "Berkeley, California",
+      "url": "",
+      "area": "Doctor of Optometry",
+      "studyType": "O.D.",
+      "startDate": "2021-09",
+      "endDate": "2025-05",
+      "score": "10",
+      "courses": ""
+    },
+    {
+      "institution": "McGill University",
+      "location": "Montréal, Québec",
+      "url": "",
+      "area": "Neuroscience",
+      "studyType": "B.Sc.",
+      "startDate": "2017-09",
+      "endDate": "2021-05",
+      "score": "10",
+      "courses": ""
+    }
+  ],
   
   "awards": [
     {
@@ -96,41 +132,7 @@
       "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
     }
   ],
-  "education": [
-    {
-      "institution": "University of California, Berkeley",
-      "location": "Berkeley, California",
-      "url": "",
-      "area": "Vision Sciences",
-      "studyType": "PhD",
-      "startDate": "2025-08",
-      "endDate": "present",
-      "score": "10",
-      "courses": ""
-    },
-    {
-      "institution": "University of California, Berkeley",
-      "location": "Berkeley, California",
-      "url": "",
-      "area": "Doctor of Optometry",
-      "studyType": "O.D.",
-      "startDate": "2021-09",
-      "endDate": "2025-05",
-      "score": "10",
-      "courses": ""
-    },
-    {
-      "institution": "McGill University",
-      "location": "Montréal, Québec",
-      "url": "",
-      "area": "Neuroscience",
-      "studyType": "B.Sc.",
-      "startDate": "2017-09",
-      "endDate": "2021-05",
-      "score": "10",
-      "courses": ""
-    }
-  ],
+  
   "skills": [
     {
       "name": "Physics",
