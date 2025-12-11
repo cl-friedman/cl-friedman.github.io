@@ -9,6 +9,7 @@
   issn = {1553-7358},
   url = {https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013573},
   doi = {10.1371/journal.pcbi.1013573},
+  abstract = {Differentiating objects, people, and animals from their surroundings is a key visual function, referred to as figure-ground segregation. Psychological research has established that humans use diverse visual features such as shape, texture, motion, and distance to identify figures. However, our understanding of the neural computations supporting figure-ground segregation remains incomplete. Recent neurophysiological observations in cortical area MT of primates – a region important for motion and depth processing – suggest that neurons in this area favor visual features that intuitively map onto figures, such as faster motion and closer distances. Inspired by these new observations, here we test the hypothesis that figures in natural scenes contain statistical regularities in motion and distance detectable at the scale of neuronal receptive fields. We combined statistical measurements of motion and distance from natural scenes with figure-ground annotations and simulations of receptive field inputs. Within simulated receptive fields, inputs corresponding to figures tended to move faster and more coherently, and tended to be nearer in distance, than the nearby ground. Our simulation predicts that the statistical regularities associated with figure motion increase notably with retinal eccentricity, while the distance statistics do not. Lastly, we implemented a simple neural population model illustrating how MT response properties, in combination with these statistics, can prioritize the representation of visual features associated with figures. These results enrich our understanding of the computations supporting figure-ground segregation, provide a normative account for recent neurophysiological observations, and contribute to converging lines of evidence that the brain exploits natural statistics to prioritize behaviorally-relevant information.},
   language = {en},
   number = {10},
   urldate = {2025-10-24},
@@ -20,6 +21,7 @@
   keywords = {Neurons, Algorithms, Neuronal tuning, Sensory perception, Vision, Cognitive science, Eye movements, Neurophysiology},
   pages = {e1013573},
   preview = {2025_Statistical_regularities.png},
+  pdf={friedman_statistical_2025.pdf},
   category = {Articles}
 }
 
@@ -29,6 +31,16 @@
   issn = {1538-9235},
   url = {https://journals.lww.com/optvissci/fulltext/2024/05000/a_paradigm_for_characterizing_motion_misperception.7.aspx},
   doi = {10.1097/OPX.0000000000002139},
+  abstract = {SIGNIFICANCE 
+          Motion perception is an essential part of visual function. Understanding how people with low vision perceive motion can therefore inform rehabilitation strategies and assistive technology. Our study introduces the notion of Bayesian biases in motion perception and suggests that some people with low vision are susceptible to these systematic misperceptions.
+          PURPOSE 
+          We aimed to develop a paradigm that can efficiently characterize motion percepts in people with low vision and compare their responses with well-known misperceptions made by people with typical vision when targets are hard to see.
+          METHODS 
+          We recruited a small cohort of individuals with reduced acuity and contrast sensitivity (n = 5) as well as a comparison cohort with typical vision (n = 5) to complete a psychophysical study. Study participants were asked to judge the motion direction of a tilted rhombus that was either high or low contrast. In a series of trials, the rhombus oscillated vertically, horizontally, or diagonally. Participants indicated the perceived motion direction using a number wheel with 12 possible directions, and statistical tests were used to examine response biases.
+          RESULTS 
+          All participants with typical vision showed systematic misperceptions well predicted by a Bayesian inference model. Specifically, their perception of vertical or horizontal motion was biased toward directions orthogonal to the long axis of the rhombus. They had larger biases for hard-to-see (low contrast) stimuli. Two participants with low vision had a similar bias, but with no difference between high- and low-contrast stimuli. The other participants with low vision were unbiased in their percepts or biased in the opposite direction.
+          CONCLUSIONS 
+          Our results suggest that some people with low vision may misperceive motion in a systematic way similar to people with typical vision. However, we observed large individual differences. Future work will aim to uncover reasons for such differences and identify aspects of vision that predict susceptibility.},
   language = {en-US},
   number = {5},
   urldate = {2025-10-24},
@@ -37,6 +49,7 @@
   month = may,
   year = {2024},
   pages = {252},
+  pdf={chin_paradigm_2024.pdf},
   category = {Articles}
 }
 
@@ -46,6 +59,7 @@
   issn = {1094-4087},
   url = {https://opg.optica.org/abstract.cfm?URI=oe-31-4-6827},
   doi = {10.1364/OE.479258},
+  abstract = {Detecting and avoiding obstacles while navigating can pose a challenge for people with low vision, but augmented reality (AR) has the potential to assist by enhancing obstacle visibility. Perceptual and user experience research is needed to understand how to craft effective AR visuals for this purpose. We developed a prototype AR application capable of displaying multiple kinds of visual cues for obstacles on an optical see-through head-mounted display. We assessed the usability of these cues via a study in which participants with low vision navigated an obstacle course. The results suggest that 3D world-locked AR cues were superior to directional heads-up cues for most participants during this activity.},
   language = {en},
   number = {4},
   urldate = {2025-10-24},
@@ -54,6 +68,7 @@
   month = feb,
   year = {2023},
   pages = {6827},
+  pdf = {fox_using_2023},
   category = {Articles}
 }
 
@@ -71,6 +86,7 @@
   month = aug,
   year = {2023},
   pages = {4934--4934},
+  pdf = {wang_natural_2023},
   category = {Conference Abstract}
 }
 
@@ -82,7 +98,10 @@
   number = {0},
   year = {2020},
   keywords = {},
-  abstract = {},
+  abstract = {Background: The human visual system extracts depth information from disparity in the images seen by the two eyes. The ability to calculate depth from disparity will be disrupted if local retinal abnormalities distort parts of those images, especially if these distortions are different in the two eyes. In its early stages, age-related macular degeneration (AMD) causes slight distortions in the central vision field which differ in the two eyes. AMD is the most common form of irreversible blindness in people over the age of 50. The goal of this project is to develop a stereoscopic perception test which leverages the sensitivity of binocular depth perception to detect the interocular differences symptomatic of either early-stage AMD or other diseases affecting the retina.
+          Methods: A program was written in MATLAB that allowed separate left and right eye stimuli to be shown to the two eyes. NVIDIA 3D Vision 2 stereoscopic glasses were used to present the stimuli. The test we have developed consists of random dot patterns covering the central 5 degrees of vision. One or more disk-shaped perturbations in depth are displayed at different locations in the visual field of the subjects. Of the ten possible target locations, we present between one and four disks on each trial. The disks will only be visible if there is an undistorted input for that visual field location from the two retinae. The participant uses a keypad to report the number of floating disks seen. A set of trials with randomized locations and numbers of disks is used to gather initial data on likely areas of stereoscopic vision deficit; afterwards, likelihoods for deficits in each location are calculated and used to generate customized subsequent trials.
+          Results: The software to perform the local stereovision test has been developed and is now being piloted. We are currently collecting data from healthy normal subjects prior to applying the test to clinical populations. In order to simulate the central vision distortions of AMD, patches of the stimulus for one eye are scrambled and blurred. This allows us to ensure that the task is functioning correctly.
+          Conclusions: The next step for this project is for it to be tested on ageing clinical populations to find its effectiveness in differentiating patients with normal sight from those showing early symptoms of AMD or other retinal abnormalities such as diabetic retinopathy. This test could represent a novel approach in early clinical detection of ocular disease.},
   issn = {2520-4122},
   url = {https://aes.amegroups.org/article/view/5224},
   category = {Conference Abstract}
