@@ -21,33 +21,19 @@
       }
     ]
   },
-  "work": [
-    {
-      "name": "Amazon Lab126",
-      "position": "Specialized HDE Intern - Emerging Optics",
-      "url": "",
-      "startDate": "2025",
-      "endDate": "",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Developed optical simulations using LightTools to analyze reflection characteristics in emerging display technology, identifying key parameters affecting visual comfort",
-      "Designed and conducted two user studies: (1) real-world usability testing with prototype devices and (2) psycho-physical experiments using MATLAB and programmable lighting to establish perceptual thresholds and preferences",
-      "Employed rigorous statistical methodology including non-parametric analyses, correlation studies, and predictive modeling to translate optical measurements into user experience metrics", 
-      "Created comprehensive technical documentation including literature reviews, experimental protocols, and data visualization, and communicated technical findings and design implications to stakeholders across product management, human factors, product innovation, optical engineering, and safety/reliability teams"]
-    }
-  ],
-  "disabled_volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
+
   "education": [
+    {
+      "institution": "University of California, Berkeley",
+      "location": "Berkeley, California",
+      "url": "",
+      "area": "Vision Sciences",
+      "studyType": "PhD",
+      "startDate": "2025-08",
+      "endDate": "present",
+      "score": "10",
+      "courses": ""
+    },
     {
       "institution": "University of California, Berkeley",
       "location": "Berkeley, California",
@@ -71,6 +57,7 @@
       "courses": ""
     }
   ],
+  
   "awards": [
     {
       "title": "Nobel Prize in Physics",
@@ -119,6 +106,33 @@
       "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     }
   ],
+  "work": [
+    {
+      "name": "Amazon Lab126",
+      "position": "Specialized HDE Intern - Emerging Optics",
+      "url": "",
+      "startDate": "2025",
+      "endDate": "",
+      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "highlights": ["Developed optical simulations using LightTools to analyze reflection characteristics in emerging display technology, identifying key parameters affecting visual comfort",
+      "Designed and conducted two user studies: (1) real-world usability testing with prototype devices and (2) psycho-physical experiments using MATLAB and programmable lighting to establish perceptual thresholds and preferences",
+      "Employed rigorous statistical methodology including non-parametric analyses, correlation studies, and predictive modeling to translate optical measurements into user experience metrics", 
+      "Created comprehensive technical documentation including literature reviews, experimental protocols, and data visualization, and communicated technical findings and design implications to stakeholders across product management, human factors, product innovation, optical engineering, and safety/reliability teams"]
+    }
+  ],
+  "disabled_volunteer": [
+    {
+      "organization": "People's Climate March",
+      "location": "Zurich, Switzerland",
+      "position": "Lead Organizer",
+      "url": "https://example.com",
+      "startDate": "2014-04-01",
+      "endDate": "2015-07-01",
+      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
+      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+    }
+  ],
+  
   "skills": [
     {
       "name": "Physics",
