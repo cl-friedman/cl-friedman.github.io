@@ -19,4 +19,4 @@ nav_order: 2
 
 </div>
 
-* originally published as "Clara Tenia Wang"
+*originally published as "Clara Tenia Wang"
