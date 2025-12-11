@@ -2,19 +2,19 @@
 layout: page
 permalink: /publications/
 title: publications
-description: 
+description: publications by categories in reversed chronological order
 nav: true
-nav_order: 3
+nav_order: 1
 ---
 
-<!-- _pages/publications.md -->
+<!-- Custom Grouping Loop -->
+{% assign publications_by_category = site.scholar.bibliography | group_by: 'category' %}
 
-<!-- Bibsearch Feature -->
-
-{% include bib_search.liquid %}
-
-<div class="publications">
-
-{% bibliography %}
-
-</div>
+{% for category in publications_by_category %}
+  <h2 class="bibliography mt-4">{{ category.name }}</h2>
+  <div class="publications">
+    {% for entry in category.items %}
+      {% include bib.liquid %}
+    {% endfor %}
+  </div>
+{% endfor %}
