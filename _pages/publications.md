@@ -30,5 +30,9 @@ nav_order: 2
 
 
 
+<br>
+<br>
+<br>
 
-*originally published as "Clara Tenia Wang"
+<p style="font-size: 0.8rem;">*originally published as "Clara Tenia Wang"</p>
+
