@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: publications by categories in reversed chronological order
+description: 
 nav: true
 nav_order: 2
 ---
@@ -18,5 +18,17 @@ nav_order: 2
 {% bibliography %}
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 *originally published as "Clara Tenia Wang"
