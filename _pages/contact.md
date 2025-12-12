@@ -45,6 +45,8 @@ text-decoration: underline;
 <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
 <a href="mailto:cl.friedman@berkeley.edu">cl.friedman@berkeley.edu</a>
 </div>
+<br>
+<br>
 
 <!-- LinkedIn -->
 
@@ -52,6 +54,8 @@ text-decoration: underline;
 <span class="contact-icon"><i class="fa-brands fa-linkedin"></i></span>
 <a href="https://www.google.com/search?q=https://www.linkedin.com/in/clara-friedman-od-b1b8631b1/" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn</a>
 </div>
+<br>
+<br>
 
 <!-- Google Scholar -->
 
