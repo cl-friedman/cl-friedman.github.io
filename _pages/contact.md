@@ -1,4 +1,12 @@
-layout: page permalink: /contact/ title: contact description: Feel free to reach out nav: true nav_order: 4
+---
+layout: page
+permalink: /contact/
+title: contact
+description: Feel free to reach out
+nav: true
+nav_order: 4
+
+---
 
 <!-- Custom Styling for this page -->
 
