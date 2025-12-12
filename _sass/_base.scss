@@ -2,12 +2,21 @@
 // Import Lexend and Inter with specific weights (More reliable)
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+// Apply to EVERYTHING with !important to force the change
+body, h1, h2, h3, h4, h5, h6, p, div, span, li, a {
+  font-family: 'Lexend', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
 // Step 2: Apply the font to the whole site
 body {
   font-family: 'Lexend', sans-serif;
   -webkit-font-smoothing: antialiased;       /* For Safari and Chrome */
   -moz-osx-font-smoothing: grayscale;      /* For Firefox on macOS */
 }
+*/
 
 /*
 // Step 1: Import the 'Manrope' font from Google Fonts
