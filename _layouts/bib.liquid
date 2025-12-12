@@ -50,7 +50,8 @@
     <!-- Title -->
     <div class="title" style="font-size: 1.1rem; font-weight: 600; color: var(--global-subtheme-color);">
       {% if entry.doi %}
-        <a href="https://doi.org/{{ entry.doi }}">{{ entry.title }}</a>
+        <!-- Added style="color: inherit" to the link below -->
+        <a href="https://doi.org/{{ entry.doi }}" style="color: inherit;">{{ entry.title }}</a>
       {% else %}
         {{ entry.title }}
       {% endif %}
