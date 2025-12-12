@@ -8,7 +8,8 @@
           {% if content.date %}
             <span class="badge danger-color-dark text-uppercase align-middle" style="min-width: 75px; font-weight: 600;">
               {% assign date_str = content.date | append: "" %}
-              {% if date_str.size == 4 %}
+              <!-- Check if it's a 4-digit year OR contains a comma (e.g. "2018, 2019") -->
+              {% if date_str.size == 4 or date_str contains "," %}
                 {{ date_str }}
               {% else %}
                 {{ content.date | date: "%Y" }}
