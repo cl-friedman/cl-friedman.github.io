@@ -1,5 +1,6 @@
 // Step 1: Import the 'Inter' font from Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap');
+// Import Lexend and Inter with specific weights (More reliable)
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 // Step 2: Apply the font to the whole site
 body {
