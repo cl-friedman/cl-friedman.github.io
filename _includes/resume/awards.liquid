@@ -6,9 +6,13 @@
         <!-- Date Column -->
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
           {% if content.date %}
-            <!-- I changed font-weight-bold to font-weight: 600 here for the date as well -->
             <span class="badge danger-color-dark text-uppercase align-middle" style="min-width: 75px; font-weight: 600;">
-              {{ content.date | date: "%Y" }}
+              {% assign date_str = content.date | append: "" %}
+              {% if date_str.size == 4 %}
+                {{ date_str }}
+              {% else %}
+                {{ content.date | date: "%Y" }}
+              {% endif %}
             </span>
           {% endif %}
         </div>
@@ -17,7 +21,7 @@
         <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
           
           <!-- Title with correct styling and link logic -->
-          <h6 class="ml-1 ml-md-4" style="font-size: 1rem; font-weight: 600; color: var(--global-subtheme-color);">
+          <h6 class="ml-1 ml-md-4" style="font-size: 1rem; font-weight: 600; color: var(--global-theme-color);">
             {% if content.url %}
               <a href="{{ content.url }}" style="color: inherit">{{ content.title }}</a>
             {% else %}
