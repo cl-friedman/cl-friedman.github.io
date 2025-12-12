@@ -185,6 +185,7 @@
 
     {
       "name": "University of California, Berkeley",
+      "subname": "Herbert Wertheim School of Optometry and Vision Science",
       "position": "Research Assistant",
       "url": "",
       "startDate": "2021-09",
@@ -198,13 +199,28 @@
 
     {
       "name": "University of California, Berkeley ",
+      "subname": "Redwood Center for Theoretical Neuroscience",
       "position": "NIH T35 Integrated Summer Research Program",
       "url": "",
-      "startDate": "2021-09",
-      "endDate": "2025-06",
+      "startDate": "2022-05",
+      "endDate": "2022-08",
       "summary": "",
       "highlights": ["Trained a sparse coding algorithm to extract binocular features from stereo images of the natural world and analysed the resultant basis functions"]
-      }
+      }, 
+
+    {
+      "name": "McGill University",
+      "subname": "Department of Ophthalmology and Vision Science",
+      "position": "Research Assistant",
+      "url": "",
+      "startDate": "2018-06",
+      "endDate": "2021-08",
+      "summary": "Advisors: Dr. Robert F. Hess, Dr. Alexander Baldwin",
+      "highlights": ["Worked on the McGill team for development of digital clinical measurement applications for clinical trials of an amblyopia-correcting video game (Dig Rush) in a collaboration between Novartis, Ubisoft, and McGill University",
+      "Coded components of interactive browser-based tests for binocular suppression, stereovision, and screen calibration in C# using Unity3D, including scripted dichoptic stimuli and implementation of staircase algorithms.",
+      "Coded and ran psychophysical experiments presented on FOVE eye-tracking virtual-reality headsets using Unity3D software, one aiming to quantify the sensitivity of stereopsis around the visual field and the other measuring vergence movements in response to depth percepts moving on binocular screens.", 
+      "Scripted and ran a stereoscopic perception test on MATLAB with Psychtoolbox that leveraged the sensitivity of binocular depth perception to detect monocular retinal abnormalities, such as those symptomatic of early-stage age-related macular degeneration."]
+    }
   ],
   "disabled_volunteer": [
     {
