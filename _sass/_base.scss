@@ -1,32 +1,18 @@
-// Step 1: Import the 'Inter' font from Google Fonts
-// Import Lexend and Inter with specific weights (More reliable)
-// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// -----------------------------------------------------------
+// 1. CUSTOM FONT OVERRIDE (Lexend)
+// -----------------------------------------------------------
+// Note: The actual font file is loaded via HTML in _includes/head.liquid
+// We only set the styling here to avoid SCSS import crashes.
 
-// Apply to EVERYTHING with !important to force the change
 body, h1, h2, h3, h4, h5, h6, p, div, span, li, a {
   font-family: 'Lexend', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*
-// Step 2: Apply the font to the whole site
-body {
-  font-family: 'Lexend', sans-serif;
-  -webkit-font-smoothing: antialiased;       /* For Safari and Chrome */
-  -moz-osx-font-smoothing: grayscale;      /* For Firefox on macOS */
-}
-*/
-
-/*
-// Step 1: Import the 'Manrope' font from Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
-
-// Step 2: Apply the font to the whole site
-body {
-  font-family: 'Manrope', sans-serif;
-}
-*/
+// -----------------------------------------------------------
+// 2. ORIGINAL BASE STYLES
+// -----------------------------------------------------------
 
 /*******************************************************************************
  * Styles for the base elements of the theme.
@@ -317,16 +303,15 @@ ul.task-list input[type="checkbox"] {
     color: var(--global-text-color);
   }
 
-.navbar-nav .nav-item .nav-link {
-  color: var(--global-text-color);
-  font-size: 1.2rem;
-  font-weight: 600;
-  #font-family: 'Arial', sans-serif;
+  .navbar-nav .nav-item .nav-link {
+    color: var(--global-text-color);
+    font-size: 1.2rem;
+    font-weight: 600;
 
-  &:hover {
-    color: var(--global-hover-color);
+    &:hover {
+      color: var(--global-hover-color);
+    }
   }
-}
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
@@ -348,7 +333,6 @@ ul.task-list input[type="checkbox"] {
         width: 1.7rem;
         height: 1.7rem;
         margin-bottom: 0.5rem;
-        // margin: 0.5rem;
       }
 
       svg {
