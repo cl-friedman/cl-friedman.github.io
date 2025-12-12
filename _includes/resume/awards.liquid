@@ -1,20 +1,28 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
-  {% for content in data[1] %}
+  {% assign awards = site.data.resume.awards %}
+  {% for content in awards %}
     <li class="list-group-item">
       <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
-          {% if content.date %} {% assign date = content.date | split: ' - ' | join: ' - ' %} {% else %} {% assign date = '' %} {% endif %}
-          <span class="badge danger-color-dark text-uppercase align-middle" style="min-width: 75px; font-weight: 600"> {{ date }} </span>
-        </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-        <h6 class="ml-1 ml-md-4" style="font-size: 1rem; font-weight: 600; color: var(--global-subtheme-color);">
-          {% if content.url %}
-            <!-- ADDED: style="color: inherit" to force the link to use the parent's color -->
-            <a href="{{ content.url }}" style="color: inherit">{{ content.title }}</a>
-          {% else %}
-            {{ content.title }}
+        <!-- Date Column -->
+        <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+          {% if content.date %}
+            <!-- I changed font-weight-bold to font-weight: 600 here for the date as well -->
+            <span class="badge danger-color-dark text-uppercase align-middle" style="min-width: 75px; font-weight: 600;">
+              {{ content.date | date: "%Y" }}
+            </span>
           {% endif %}
-        </h6>
+        </div>
+        
+        <!-- Content Column -->
+        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+          
+          <!-- Title with correct styling and link logic -->
+          <h6 class="ml-1 ml-md-4" style="font-size: 1rem; font-weight: 600; color: var(--global-theme-color);">
+            {% if content.url %}
+              <a href="{{ content.url }}" style="color: inherit">{{ content.title }}</a>
+            {% else %}
+              {{ content.title }}
+            {% endif %}
           </h6>
 
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.awarder }}</h6>
@@ -24,4 +32,3 @@
     </li>
   {% endfor %}
 </ul>
-{% if content.date %} {{ content.date | date: "%Y" }} {% endif %}
