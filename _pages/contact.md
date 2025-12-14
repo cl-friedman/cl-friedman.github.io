@@ -8,23 +8,23 @@ font-size: 1.25rem; /* Adjustable font size /
 font-weight: 400;   / Adjustable font weight /
 }
 .contact-item {
-margin-bottom: 1.5rem;
+margin-bottom: 1.5rem; / Space between items /
 display: flex;
 align-items: center;
 }
 .contact-icon {
-width: 2.5rem;
+width: 2.5rem;      / Width of the icon column /
 text-align: center;
 margin-right: 0.5rem;
-font-size: 1.5rem;
-color: var(--global-theme-color);
+font-size: 1.5rem;  / Icon size /
+color: var(--global-theme-color); / Uses your theme color /
 }
 .contact-item a {
-color: inherit;
+color: inherit;     / Inherits the font color/weight from .contact-list /
 text-decoration: none !important; / Forces no underline /
 }
 .contact-item a:hover {
-color: var(--global-theme-color);
+color: var(--global-theme-color); / Changes color on hover /
 text-decoration: none !important; / Forces no underline on hover */
 }
 </style>
