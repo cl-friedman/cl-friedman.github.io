@@ -1,39 +1,31 @@
----
-layout: page
-permalink: /contact/
-title: contact
-description: Feel free to reach out
-nav: true
-nav_order: 4
-
----
+layout: page permalink: /contact/ title: contact description: Feel free to reach out nav: true nav_order: 4
 
 <!-- Custom Styling for this page -->
 
 <style>
 .contact-list {
-font-size: 1.25rem; /* CHANGE FONT SIZE HERE (e.g., 1rem, 1.2rem, 18px) /
-font-weight: 400;   / CHANGE FONT WEIGHT HERE (300 light, 400 normal, 600 semi-bold) /
+font-size: 1.25rem; /* Adjustable font size /
+font-weight: 400;   / Adjustable font weight /
 }
 .contact-item {
-margin-bottom: 1.5rem; / Space between items /
+margin-bottom: 1.5rem;
 display: flex;
 align-items: center;
 }
 .contact-icon {
-width: 2.5rem;      / Width of the icon column /
+width: 2.5rem;
 text-align: center;
 margin-right: 0.5rem;
-font-size: 1.5rem;  / Icon size /
-color: var(--global-theme-color); / Uses your theme color /
+font-size: 1.5rem;
+color: var(--global-theme-color);
 }
 .contact-item a {
-color: inherit;     / Inherits the font color/weight from .contact-list /
-text-decoration: none;
+color: inherit;
+text-decoration: none !important; / Forces no underline /
 }
 .contact-item a:hover {
-color: var(--global-theme-color); / Changes color on hover */
-text-decoration: underline;
+color: var(--global-theme-color);
+text-decoration: none !important; / Forces no underline on hover */
 }
 </style>
 
@@ -45,17 +37,13 @@ text-decoration: underline;
 <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
 <a href="mailto:cl.friedman@berkeley.edu">cl.friedman@berkeley.edu</a>
 </div>
-<br>
-<br>
 
 <!-- LinkedIn -->
 
 <div class="contact-item">
 <span class="contact-icon"><i class="fa-brands fa-linkedin"></i></span>
-<a href="https://www.google.com/search?q=https://www.linkedin.com/in/clara-friedman-od-b1b8631b1/" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn</a>
+<a href="https://www.linkedin.com/in/clara-friedman-od-b1b8631b1/" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn</a>
 </div>
-<br>
-<br>
 
 <!-- Google Scholar -->
 
