@@ -12,7 +12,7 @@ nav_order: 4
 <style>
 .contact-list {
 font-size: 1.25rem; /* Adjustable font size /
-font-weight: 400;   / Adjustable font weight /
+font-weight: 500;   / Adjustable font weight /
 }
 .contact-item {
 margin-bottom: 1.5rem; / Space between items /
@@ -45,12 +45,16 @@ text-decoration: none !important; / Forces no underline on hover */
 <a href="mailto:cl.friedman@berkeley.edu">cl.friedman@berkeley.edu</a>
 </div>
 
+<br>
+
 <!-- LinkedIn -->
 
 <div class="contact-item">
 <span class="contact-icon"><i class="fa-brands fa-linkedin"></i></span>
 <a href="https://www.linkedin.com/in/clara-friedman-od-b1b8631b1/" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn</a>
 </div>
+
+<br>
 
 <!-- Google Scholar -->
 
