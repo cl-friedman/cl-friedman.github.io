@@ -8,14 +8,16 @@ layout: page
   {% assign raw_bib = site.scholar.bibliography %}
   {% assign all_papers = "" | split: "" %}
 
-  {% if raw_bib.first[1].size > 0 %}
-    <!-- It is grouped by year (hash), so we flatten it into a list -->
-    {% for year_group in raw_bib %}
-       {% assign all_papers = all_papers | concat: year_group[1] %}
-    {% endfor %}
-  {% else %}
-    <!-- It is already a flat list -->
-    {% assign all_papers = raw_bib %}
+  {% if raw_bib %}
+    {% if raw_bib.first[1].size > 0 %}
+      <!-- It is grouped by year (hash), so we flatten it into a list -->
+      {% for year_group in raw_bib %}
+         {% assign all_papers = all_papers | concat: year_group[1] %}
+      {% endfor %}
+    {% else %}
+      <!-- It is already a flat list -->
+      {% assign all_papers = raw_bib %}
+    {% endif %}
   {% endif %}
 
   <!-- 2. Group by Category -->
@@ -40,6 +42,16 @@ layout: page
   {% assign talk_entries = all_papers | where: "category", "Talk" %}
   <!-- Check for plural "Talks" just in case -->
   {% assign talks_plural = all_papers | where: "category", "Talks" %}
+  
+  <!-- Safety check for arrays before concat to prevent Liquid Exception -->
+  {% assign empty_array = "" | split: "" %}
+  {% if talk_entries == nil %}
+    {% assign talk_entries = empty_array %}
+  {% endif %}
+  {% if talks_plural == nil %}
+    {% assign talks_plural = empty_array %}
+  {% endif %}
+
   {% assign all_talks = talk_entries | concat: talks_plural %}
 
   {% if all_talks.size > 0 %}
