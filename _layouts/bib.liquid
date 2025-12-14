@@ -3,31 +3,49 @@ layout: page
 ---
 
 <div class="publications">
-  <!-- Get all papers -->
-  {% assign all_papers = site.scholar.bibliography %}
+  <!-- 1. Handle Bibliography Data Structure (Safety Net) -->
+  <!-- This fixes the blank page issue if _config.yml groups by year -->
+  {% assign raw_bib = site.scholar.bibliography %}
+  {% assign all_papers = "" | split: "" %}
 
-  <!-- Group them by category -->
+  {% if raw_bib.first[1].size > 0 %}
+    <!-- It is grouped by year (hash), so we flatten it into a list -->
+    {% for year_group in raw_bib %}
+       {% assign all_papers = all_papers | concat: year_group[1] %}
+    {% endfor %}
+  {% else %}
+    <!-- It is already a flat list -->
+    {% assign all_papers = raw_bib %}
+  {% endif %}
+
+  <!-- 2. Group by Category -->
   {% assign publications_by_category = all_papers | group_by: 'category' %}
 
-  <!-- 1. Render all categories EXCEPT "Talk" -->
+  <!-- 3. Render Main Categories (Skipping "Talk" entries) -->
   {% for category in publications_by_category %}
-    {% if category.name == 'Talk' %}
+    {% assign cat_name = category.name %}
+    <!-- Skip Talk/Talks here, we render them later -->
+    {% if cat_name == 'Talk' or cat_name == 'Talks' %}
       {% continue %}
     {% endif %}
     
-    <h2 class="bibliography mt-4">{{ category.name }}</h2>
+    <h2 class="bibliography mt-4">{{ cat_name }}</h2>
     {% for entry in category.items %}
-      {% include bib.liquid %}
+      <!-- Pass entry=entry explicitly to ensure data reaches the include -->
+      {% include bib.liquid entry=entry %}
     {% endfor %}
   {% endfor %}
 
-  <!-- 2. Render "Talk" category separately at the bottom -->
+  <!-- 4. Render "Talks" Section Separate at the Bottom -->
   {% assign talk_entries = all_papers | where: "category", "Talk" %}
+  <!-- Check for plural "Talks" just in case -->
+  {% assign talks_plural = all_papers | where: "category", "Talks" %}
+  {% assign all_talks = talk_entries | concat: talks_plural %}
 
-  {% if talk_entries.size > 0 %}
+  {% if all_talks.size > 0 %}
     <h2 class="bibliography mt-4">Talks</h2>
-    {% for entry in talk_entries %}
-      {% include bib.liquid %}
+    {% for entry in all_talks %}
+      {% include bib.liquid entry=entry %}
     {% endfor %}
   {% endif %}
 </div>
