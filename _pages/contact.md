@@ -60,7 +60,7 @@ text-decoration: none !important; / Forces no underline on hover */
 
 <div class="contact-item">
 <span class="contact-icon"><i class="ai ai-google-scholar"></i></span>
-<a href="https://scholar.google.com/citations?user=3AfiygwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar Profile</a>
+<a href="https://scholar.google.com/citations?user=3AfiygwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
 </div>
 
 </div>
