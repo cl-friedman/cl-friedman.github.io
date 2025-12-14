@@ -1,0 +1,60 @@
+layout: page permalink: /publications/ title: publications description: publications by categories in reversed chronological order nav: true nav_order: 1
+
+<!-- Get all papers -->
+
+{% assign raw_bib = site.scholar.bibliography %}
+{% assign all_papers = "" | split: "" %}
+
+<!-- Safety Check: Flatten bibliography if grouped by year in config -->
+
+{% if raw_bib %}
+{% if raw_bib.first[1].size > 0 %}
+<!-- It is grouped by year (hash), so we flatten it into a list -->
+{% for year_group in raw_bib %}
+{% assign all_papers = all_papers | concat: year_group[1] %}
+{% endfor %}
+{% else %}
+<!-- It is already a flat list -->
+{% assign all_papers = raw_bib %}
+{% endif %}
+{% endif %}
+
+<!-- Group by Category -->
+
+{% assign publications_by_category = all_papers | group_by: 'category' %}
+
+<!-- 1. Main Publications Loop (Skipping "Talk" entries) -->
+
+{% for category in publications_by_category %}
+{% assign cat_name = category.name %}
+
+<!-- Skip Talk/Talks here; we render them later -->
+
+{% if cat_name == 'Talk' or cat_name == 'Talks' %}
+{% continue %}
+{% endif %}
+
+<h2 class="bibliography mt-4">{{ cat_name }}</h2>
+<div class="publications">
+{% for entry in category.items %}
+<!-- This calls _includes/bib.liquid to render the entry -->
+{% include bib.liquid %}
+{% endfor %}
+</div>
+{% endfor %}
+
+<!-- 2. Talks Section (Rendered Separately at Bottom) -->
+
+{% assign talk_entries = all_papers | where: "category", "Talk" %}
+{% assign talks_plural = all_papers | where: "category", "Talks" %}
+{% assign all_talks = talk_entries | concat: talks_plural %}
+
+{% if all_talks.size > 0 %}
+
+<h2 class="bibliography mt-4">Talks</h2>
+<div class="publications">
+{% for entry in all_talks %}
+{% include bib.liquid %}
+{% endfor %}
+</div>
+{% endif %}
