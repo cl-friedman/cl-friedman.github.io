@@ -23,7 +23,7 @@
           
           <!-- Title with correct styling and link logic -->
           <h6 class="ml-1 ml-md-4" style="font-size: 1rem; font-weight: 600; color: var(--global-subtheme-color);">
-            {% if content.url %}
+            {% if content.url != blank %}
               <a href="{{ content.url }}" style="color: inherit">{{ content.title }}</a>
             {% else %}
               {{ content.title }}
