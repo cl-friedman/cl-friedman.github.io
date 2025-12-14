@@ -94,7 +94,8 @@
         {%- if author_is_self -%}
           <span style="font-weight: 500; border-bottom: none;">
             {{- author.first }}
-            {{ author_last_html -}}          
+            {{ author_last_html -}}   
+          </span>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">
