@@ -6,7 +6,6 @@ description: publications by categories in reversed chronological order
 nav: true 
 nav_order: 3
 ---
-
 <!-- Get all papers -->
 
 {% assign raw_bib = site.scholar.bibliography %}
