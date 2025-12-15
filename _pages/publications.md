@@ -15,7 +15,15 @@ nav_order: 3
 <!-- Safety Check: Flatten bibliography if grouped by year in config -->
 
 {% if raw_bib %}
-{% if raw_bib.first[1].size > 0 %}
+{% assign is_grouped = false %}
+
+<!-- Check if the first item looks like a group (has 2 elements, second is array) -->
+
+{% if raw_bib.first.size == 2 %}
+{% assign is_grouped = true %}
+{% endif %}
+
+{% if is_grouped %}
 <!-- It is grouped by year (hash), so we flatten it into a list -->
 {% for year_group in raw_bib %}
 {% assign all_papers = all_papers | concat: year_group[1] %}
@@ -52,8 +60,20 @@ nav_order: 3
 
 <!-- 2. Talks Section (Rendered Separately at Bottom) -->
 
+<!-- Initialize empty array to prevent concat errors -->
+
+{% assign empty_array = "" | split: "" %}
+
 {% assign talk_entries = all_papers | where: "category", "Talk" %}
+{% if talk_entries == nil %}
+{% assign talk_entries = empty_array %}
+{% endif %}
+
 {% assign talks_plural = all_papers | where: "category", "Talks" %}
+{% if talks_plural == nil %}
+{% assign talks_plural = empty_array %}
+{% endif %}
+
 {% assign all_talks = talk_entries | concat: talks_plural %}
 
 {% if all_talks.size > 0 %}
