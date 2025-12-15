@@ -6,6 +6,7 @@ description: publications by categories in reversed chronological order
 nav: true 
 nav_order: 3
 ---
+
 <!-- Get all papers -->
 
 {% assign raw_bib = site.scholar.bibliography %}
@@ -16,12 +17,11 @@ nav_order: 3
 <!-- Detect if it is a flat list (paper has title) or grouped by year (array of [year, list]) -->
 
 {% if raw_bib.first.title %}
-<!-- It is already a flat list -->
 {% assign all_papers = raw_bib %}
 {% else %}
 <!-- It is grouped by year, so we flatten it -->
 {% for year_group in raw_bib %}
-<!-- We use where_exp to force the list into a clean array to satisfy 'concat' -->
+<!-- We use where_exp to force the list into a clean array -->
 {% assign year_papers = year_group[1] | where_exp: "item", "true" %}
 {% if year_papers %}
 {% assign all_papers = all_papers | concat: year_papers %}
