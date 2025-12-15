@@ -7,27 +7,23 @@ nav: true
 nav_order: 3
 ---
 
-
 <!-- Get all papers -->
 {% assign raw_bib = site.scholar.bibliography %}
 {% assign all_papers = "" | split: "" %}
 
-<!-- Safety Check: Flatten bibliography if grouped by year in config -->
 {% if raw_bib %}
-  <!-- Detect if it's a hash (grouped) or array (flat) -->
-  {% assign is_grouped = false %}
-  {% if raw_bib.first.size == 2 %}
-    {% assign is_grouped = true %}
-  {% endif %}
-
-  {% if is_grouped %}
-    <!-- It is grouped by year, so we flatten it -->
-    {% for year_group in raw_bib %}
-       {% assign all_papers = all_papers | concat: year_group[1] %}
-    {% endfor %}
-  {% else %}
-    <!-- It is already a flat list -->
+  <!-- Safety Check: Handle both Grouped-by-Year (default) and Flat bibliographies -->
+  {% if raw_bib.first.title %}
+    <!-- It has a title property, so it is already a flat list of papers -->
     {% assign all_papers = raw_bib %}
+  {% else %}
+    <!-- It is a grouped hash (e.g. by year), so we must flatten it -->
+    {% for year_group in raw_bib %}
+       {% assign year_papers = year_group[1] %}
+       {% if year_papers %}
+         {% assign all_papers = all_papers | concat: year_papers %}
+       {% endif %}
+    {% endfor %}
   {% endif %}
 {% endif %}
 
@@ -46,13 +42,14 @@ nav_order: 3
   <h2 class="bibliography mt-4">{{ cat_name }}</h2>
   <div class="publications">
     {% for entry in category.items %}
-      {% include bib.liquid %}
+      <!-- EXPLICITLY pass the entry variable to the include -->
+      {% include bib.liquid entry=entry %}
     {% endfor %}
   </div>
 {% endfor %}
 
 <!-- 2. Talks Section (Rendered Separately at Bottom) -->
-<!-- We filter both variants but render them sequentially to avoid using 'concat' -->
+<!-- We filter both variants ('Talk' and 'Talks') and render sequentially -->
 {% assign talk_entries = all_papers | where: "category", "Talk" %}
 {% assign talks_plural = all_papers | where: "category", "Talks" %}
 
@@ -67,12 +64,12 @@ nav_order: 3
   <div class="publications">
     <!-- Render 'Talk' entries -->
     {% for entry in talk_entries %}
-      {% include bib.liquid %}
+      {% include bib.liquid entry=entry %}
     {% endfor %}
     
     <!-- Render 'Talks' entries -->
     {% for entry in talks_plural %}
-      {% include bib.liquid %}
+      {% include bib.liquid entry=entry %}
     {% endfor %}
   </div>
 {% endif %}
