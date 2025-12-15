@@ -65,14 +65,14 @@ nav_order: 3
 {% assign empty_array = "" | split: "" %}
 
 {% assign talk_entries = all_papers | where: "category", "Talk" %}
-{% if talk_entries == nil %}
+{% unless talk_entries %}
 {% assign talk_entries = empty_array %}
-{% endif %}
+{% endunless %}
 
 {% assign talks_plural = all_papers | where: "category", "Talks" %}
-{% if talks_plural == nil %}
+{% unless talks_plural %}
 {% assign talks_plural = empty_array %}
-{% endif %}
+{% endunless %}
 
 {% assign all_talks = talk_entries | concat: talks_plural %}
 
