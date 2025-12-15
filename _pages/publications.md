@@ -7,30 +7,38 @@ nav: true
 nav_order: 3
 ---
 
+
+<!-- Get all papers -->
 {% assign raw_bib = site.scholar.bibliography %}
 {% assign all_papers = "" | split: "" %}
 
+<!-- Safety Check: Flatten bibliography if grouped by year in config -->
 {% if raw_bib %}
+  <!-- Detect if it's a hash (grouped) or array (flat) -->
   {% assign is_grouped = false %}
-  
   {% if raw_bib.first.size == 2 %}
     {% assign is_grouped = true %}
   {% endif %}
 
   {% if is_grouped %}
+    <!-- It is grouped by year, so we flatten it -->
     {% for year_group in raw_bib %}
        {% assign all_papers = all_papers | concat: year_group[1] %}
     {% endfor %}
   {% else %}
+    <!-- It is already a flat list -->
     {% assign all_papers = raw_bib %}
   {% endif %}
 {% endif %}
 
+<!-- Group by Category -->
 {% assign publications_by_category = all_papers | group_by: 'category' %}
 
+<!-- 1. Main Publications Loop (Skipping "Talk" entries) -->
 {% for category in publications_by_category %}
   {% assign cat_name = category.name %}
   
+  <!-- Skip Talk/Talks here; we render them later -->
   {% if cat_name == 'Talk' or cat_name == 'Talks' %}
     {% continue %}
   {% endif %}
@@ -43,24 +51,27 @@ nav_order: 3
   </div>
 {% endfor %}
 
-{% assign empty_array = "" | split: "" %}
-
+<!-- 2. Talks Section (Rendered Separately at Bottom) -->
+<!-- We filter both variants but render them sequentially to avoid using 'concat' -->
 {% assign talk_entries = all_papers | where: "category", "Talk" %}
-{% unless talk_entries %}
-  {% assign talk_entries = empty_array %}
-{% endunless %}
-
 {% assign talks_plural = all_papers | where: "category", "Talks" %}
-{% unless talks_plural %}
-  {% assign talks_plural = empty_array %}
-{% endunless %}
 
-{% assign all_talks = talk_entries | concat: talks_plural %}
+<!-- Check if we have any talks to show -->
+{% assign show_talks = false %}
+{% if talk_entries.size > 0 or talks_plural.size > 0 %}
+  {% assign show_talks = true %}
+{% endif %}
 
-{% if all_talks.size > 0 %}
+{% if show_talks %}
   <h2 class="bibliography mt-4">Talks</h2>
   <div class="publications">
-    {% for entry in all_talks %}
+    <!-- Render 'Talk' entries -->
+    {% for entry in talk_entries %}
+      {% include bib.liquid %}
+    {% endfor %}
+    
+    <!-- Render 'Talks' entries -->
+    {% for entry in talks_plural %}
       {% include bib.liquid %}
     {% endfor %}
   </div>
